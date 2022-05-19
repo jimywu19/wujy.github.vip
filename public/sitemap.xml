@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://blog.wujy.vip/posts/istio/</loc>
+    <lastmod>2022-05-19T09:01:39+08:00</lastmod>
+  </url><url>
+    <loc>http://blog.wujy.vip/</loc>
+    <lastmod>2022-05-19T09:01:39+08:00</lastmod>
+  </url><url>
+    <loc>http://blog.wujy.vip/posts/</loc>
+    <lastmod>2022-05-19T09:01:39+08:00</lastmod>
+  </url><url>
+    <loc>http://blog.wujy.vip/posts/bigdata/</loc>
+    <lastmod>2022-05-19T09:00:57+08:00</lastmod>
+  </url><url>
+    <loc>http://blog.wujy.vip/categories/</loc>
+  </url><url>
+    <loc>http://blog.wujy.vip/tags/</loc>
+  </url>
+</urlset>
