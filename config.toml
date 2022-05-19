@@ -1,5 +1,0 @@
-baseURL = 'http://blog.wujy.vip/'
-languageCode = 'cn-Hans'
-title = "Jimywu's Hugo Site"
-theme = "ananke"
-
