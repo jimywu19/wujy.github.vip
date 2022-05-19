@@ -6,7 +6,38 @@
     <description>Recent content on Jimywu&#39;s Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-Hans</language>
-    <lastBuildDate>Thu, 19 May 2022 09:26:33 +0800</lastBuildDate><atom:link href="https://blog.wujy.vip/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 May 2022 10:00:55 +0800</lastBuildDate><atom:link href="https://blog.wujy.vip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kafka</title>
+      <link>https://blog.wujy.vip/posts/kafka/</link>
+      <pubDate>Thu, 19 May 2022 10:00:55 +0800</pubDate>
+      
+      <guid>https://blog.wujy.vip/posts/kafka/</guid>
+      <description>介绍     一个分布式、分区的、多副本的、多订阅者的基于zookeeper协调的消息队列系统
+名词解释      Topic 发布到Kafka集群的消息的类别，类似于数据库的表名 broker 服务器节点 partition topic中的数据分割为一个或多个patition , 至少有一个 producer 生产者 consumer 消费者  常用命令      启动kafaka
+bin/kafka-server-start.sh config/server.properties 创建主题
+bin/kafka-topics.sh --create --zookeeper hadoop101:2181 --partitions 1 --replication-factor 1 --topic first
+bin/kafka-topics.sh --create --partitions 1 --replication-factor 1 --topic first --bootstrap-server 127.0.0.1:9092 查看主题
+bin/kafka-topics.sh --list --zookeeper hadoop101:2181 删除主题
+bin/kafka-topics.sh --zookeeper hadoop101:2181 --delete --topic first 发送消息
+bin/kafka-console-producer.sh --broker-list hadoop101:9092 --topic first 消费消息</description>
+    </item>
+    
+    <item>
+      <title>Istio</title>
+      <link>https://blog.wujy.vip/posts/istio/</link>
+      <pubDate>Thu, 19 May 2022 10:00:24 +0800</pubDate>
+      
+      <guid>https://blog.wujy.vip/posts/istio/</guid>
+      <description>1、其他      HPA VPA  2、Consul     3、Eureka     4、Zipkin     5、微服务架构      dubbo springCloud  6、Knative     serviceless
+7、Istio     与Kubernetes紧密结合的适用于云原生场景的Service Mesh形态的用于服务治理的开发平台。
+服务治理：连接、安全、策略执行、可观测性
+ UDPA(Universal Data Plane API)
+数据平面标准&amp;mdash;-实例间网络流量 SMI(Service Mesh Interface)
+制平面标准&amp;mdash;-负责生成和部署控制数据平面行为的相关配置  7.1、Pilot     配置数据 VirtualService DestinationRule Gateway ServiceEntry
+ gRPC xDS  7.</description>
+    </item>
+    
     <item>
       <title>BigData</title>
       <link>https://blog.wujy.vip/posts/bigdata/</link>

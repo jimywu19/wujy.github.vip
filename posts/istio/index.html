@@ -8,8 +8,15 @@
 <meta name="generator" content="Hugo 0.99.1" />
 
 
+  <meta name="description" content="1、其他      HPA VPA  2、Consul     3、Eureka     4、Zipkin     5、微服务架构      dubbo springCloud  6、Knative     serviceless
+7、Istio     与Kubernetes紧密结合的适用于云原生场景的Service Mesh形态的用于服务治理的开发平台。
+服务治理：连接、安全、策略执行、可观测性
+ UDPA(Universal Data Plane API)
+数据平面标准&mdash;-实例间网络流量 SMI(Service Mesh Interface)
+制平面标准&mdash;-负责生成和部署控制数据平面行为的相关配置  7.1、Pilot     配置数据 VirtualService DestinationRule Gateway ServiceEntry
+ gRPC xDS  7." />
 
-    <title>Jimywu&#39;s Hugo Site</title>
+    <title>Istio | Jimywu&#39;s Hugo Site</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -28,24 +35,75 @@
     
 
     
+  <meta
+    property="og:title"
+    content="Istio"
+  />
   <meta property="og:site_name" content="Jimywu's Hugo Site" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.wujy.vip/" />
+  <meta property="og:description" content="1、其他      HPA VPA  2、Consul     3、Eureka     4、Zipkin     5、微服务架构      dubbo springCloud  6、Knative     serviceless
+7、Istio     与Kubernetes紧密结合的适用于云原生场景的Service Mesh形态的用于服务治理的开发平台。
+服务治理：连接、安全、策略执行、可观测性
+ UDPA(Universal Data Plane API)
+数据平面标准—-实例间网络流量 SMI(Service Mesh Interface)
+制平面标准—-负责生成和部署控制数据平面行为的相关配置  7.1、Pilot     配置数据 VirtualService DestinationRule Gateway ServiceEntry
+ gRPC xDS  7." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.wujy.vip/posts/istio/" />
 
-
+<meta property="article:section" content="Posts" />
+    <meta
+      property="article:published_time"
+      content="2022-05-19T10:00:24+08:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2022-05-19T10:00:24+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Jimywu's Hugo Site" />
+<meta name="twitter:title" content="Istio" />
+  <meta name="twitter:description" content="1、其他      HPA VPA  2、Consul     3、Eureka     4、Zipkin     5、微服务架构      dubbo springCloud  6、Knative     serviceless
+7、Istio     与Kubernetes紧密结合的适用于云原生场景的Service Mesh形态的用于服务治理的开发平台。
+服务治理：连接、安全、策略执行、可观测性
+ UDPA(Universal Data Plane API)
+数据平面标准—-实例间网络流量 SMI(Service Mesh Interface)
+制平面标准—-负责生成和部署控制数据平面行为的相关配置  7.1、Pilot     配置数据 VirtualService DestinationRule Gateway ServiceEntry
+ gRPC xDS  7." />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "Jimywu's Hugo Site",
-      "url": "https://blog.wujy.vip",
-      "inLanguage": "en"
+      "@type": "TechArticle",
+      "articleSection": "Posts",
+      "name": "Istio",
+      "url" : "https://blog.wujy.vip/posts/istio/",
+      "headline": "Istio",
+      "description": "1、其他      HPA VPA  2、Consul     3、Eureka     4、Zipkin     5、微服务架构      dubbo springCloud  6、Knative     serviceless\n7、Istio     与Kubernetes紧密结合的适用于云原生场景的Service Mesh形态的用于服务治理的开发平台。\n服务治理：连接、安全、策略执行、可观测性\n UDPA(Universal Data Plane API)\n数据平面标准—-实例间网络流量 SMI(Service Mesh Interface)\n制平面标准—-负责生成和部署控制数据平面行为的相关配置  7.1、Pilot     配置数据 VirtualService DestinationRule Gateway ServiceEntry\n gRPC xDS  7.",
+      "wordCount" : "55",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://blog.wujy.vip/posts/istio/"
+      },
+      "copyrightHolder" : "Jimywu\u0027s Hugo Site",
+      "copyrightYear" : "2022",
+      "dateCreated": "2022-05-19T10:00:24.00Z",
+      "datePublished": "2022-05-19T10:00:24.00Z",
+      "dateModified": "2022-05-19T10:00:24.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Jimywu's Hugo Site",
+          "url": "https://blog.wujy.vip",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://blog.wujy.vip/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
   }
   </script>
 
@@ -110,7 +168,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://blog.wujy.vip/" rel="canonical" type="text/html" />
+  <link href="https://blog.wujy.vip/posts/istio/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -353,7 +411,7 @@
                 <span class="flex">
                   <a
                     href="/posts/istio/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     Istio
                   </a>
@@ -434,51 +492,182 @@
 
         <div class="gdoc-page">
           
-  
+  <article class="gdoc-post">
+    <header class="gdoc-post__header">
+      <h1 class="gdoc-post__title">Istio</h1>
+      <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
+        <span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+  <span class="gdoc-post__tag">
+    <time datetime="2022-05-19T10:00:24&#43;08:00">
+      
+      May 19, 2022
+    </time>
+  </span>
+</span>
+
+<span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
+  <span class="gdoc-post__tag">One minute to read</span>
+</span>
 
 
-  
 
 
 
 
-
-
-<div
-  class="gdoc-page__header flex flex-wrap
-  
-    justify-between
-  
-  hidden-mobile
-  "
-  itemprop="breadcrumb"
->
-  
-    <div>
-      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
-      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-        
-        
-        
-        
-  
-  
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Jimywu's Hugo Site</span><meta itemprop='position' content='1' /></li>
-  
-
-      </ol>
-    </div>
-  
-  
+      </div>
+    </header>
+    <section class="gdoc-markdown">
+      <div class="gdoc-page__anchorwrap">
+    <h1 id="1其他">
+        1、其他
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#1其他" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 1、其他" aria-label="Anchor to: 1、其他" href="#1%e5%85%b6%e4%bb%96">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<ul>
+<li>HPA</li>
+<li>VPA</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="2consul">
+        2、Consul
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#2consul" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 2、Consul" aria-label="Anchor to: 2、Consul" href="#2consul">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="3eureka">
+        3、Eureka
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#3eureka" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 3、Eureka" aria-label="Anchor to: 3、Eureka" href="#3eureka">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="4zipkin">
+        4、Zipkin
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#4zipkin" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 4、Zipkin" aria-label="Anchor to: 4、Zipkin" href="#4zipkin">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="5微服务架构">
+        5、微服务架构
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#5微服务架构" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 5、微服务架构" aria-label="Anchor to: 5、微服务架构" href="#5%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<ul>
+<li>dubbo</li>
+<li>springCloud</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="6knative">
+        6、Knative
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#6knative" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 6、Knative" aria-label="Anchor to: 6、Knative" href="#6knative">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>serviceless</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="7istio">
+        7、Istio
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#7istio" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 7、Istio" aria-label="Anchor to: 7、Istio" href="#7istio">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>与<strong>Kubernetes紧密结合</strong>的适用于云原生场景的<strong>Service Mesh形态</strong>的用于<strong>服务治理</strong>的开发平台。<br>
+<strong>服务治理</strong>：连接、安全、策略执行、可观测性</p>
+<ul>
+<li>UDPA(Universal Data Plane API)<br>
+数据平面标准&mdash;-<strong>实例间网络流量</strong></li>
+<li>SMI(Service Mesh Interface)<br>
+制平面标准&mdash;-负责生成和部署控制数据平面行为的相关配置</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="71pilot">
+        7.1、Pilot
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#71pilot" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 7.1、Pilot" aria-label="Anchor to: 7.1、Pilot" href="#71pilot">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>配置数据
+VirtualService   DestinationRule Gateway ServiceEntry</p>
+<ul>
+<li>gRPC</li>
+<li>xDS</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="72envoy">
+        7.2、Envoy
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#72envoy" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 7.2、Envoy" aria-label="Anchor to: 7.2、Envoy" href="#72envoy">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p><strong>Service Mesh</strong>
+服务网格，专注于处理服务间通信的<strong>基础设施</strong>，云原生组成的复杂拓扑中<strong>可靠的传递请求</strong><br>
+<strong>Envoy</strong> 服务网格的数据面代理
+动态服务发现、负载均衡、TLS、HTTP/2、gRPC代理、等等的实现角色</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="73mixer">
+        7.3、Mixer
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#73mixer" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 7.3、Mixer" aria-label="Anchor to: 7.3、Mixer" href="#73mixer">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<ul>
+<li>telemetry 数据收集</li>
+<li>policy 策略执行，访问控制   对接配额、授权、黑白名单的控制后端</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="74citadel">
+        7.4、citadel
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#74citadel" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 7.4、citadel" aria-label="Anchor to: 7.4、citadel" href="#74citadel">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>安全组件 证书、密钥
+tls认证、访问授权、通道加密</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="75galley">
+        7.5、galley
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#75galley" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 7.5、galley" aria-label="Anchor to: 7.5、galley" href="#75galley">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>控制面 配置管理</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="76sidecar-injector">
+        7.6、sidecar-injector
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#76sidecar-injector" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 7.6、sidecar-injector" aria-label="Anchor to: 7.6、sidecar-injector" href="#76sidecar-injector">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>自动注入sidecar</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="77proxy">
+        7.7proxy
+        <a data-clipboard-text="https://blog.wujy.vip/posts/istio/#77proxy" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 7.7proxy" aria-label="Anchor to: 7.7proxy" href="#77proxy">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
 </div>
 
-
-
-  <article
-    class="gdoc-markdown gdoc-markdown__align--left"
-  >
-    <h1>Jimywu&#39;s Hugo Site</h1>
-    
+    </section>
   </article>
 
 
