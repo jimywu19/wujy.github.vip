@@ -8,8 +8,17 @@
 <meta name="generator" content="Hugo 0.99.1" />
 
 
+  <meta name="description" content="这个来解释下
+ss -n |awk &#39;/^tcp/ {&#43;&#43;S[$NF]} END {for (a in S) print a, S[a]}&#39;   /^tcp/ 正则表达式，匹配行首以tcp开始
+  NF 列数
+  $NF 最后一列的值，一般是IP地址
+  S[$NF] 下标为具体IP地址的数组,值是数量
+  &#43;&#43;$[$NF] 会把每个IP出现的次数统计出来
+  for (a in S) 这里a取得是S这个数组的下标，就是IP
+  S[a] 也就是统计的数量
+  " />
 
-    <title>Pythons | Jimywu&#39;s Hugo Site</title>
+    <title>Awk | Jimywu&#39;s Hugo Site</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -30,43 +39,66 @@
     
   <meta
     property="og:title"
-    content="Pythons"
+    content="Awk"
   />
   <meta property="og:site_name" content="Jimywu's Hugo Site" />
+  <meta property="og:description" content="这个来解释下
+ss -n |awk &#39;/^tcp/ {&#43;&#43;S[$NF]} END {for (a in S) print a, S[a]}&#39;   /^tcp/ 正则表达式，匹配行首以tcp开始
+  NF 列数
+  $NF 最后一列的值，一般是IP地址
+  S[$NF] 下标为具体IP地址的数组,值是数量
+  &#43;&#43;$[$NF] 会把每个IP出现的次数统计出来
+  for (a in S) 这里a取得是S这个数组的下标，就是IP
+  S[a] 也就是统计的数量
+  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.wujy.vip/python/" />
+<meta property="og:url" content="https://blog.wujy.vip/posts/awk/" />
 
-<meta property="article:section" content="Python" />
+<meta property="article:section" content="Posts" />
+    <meta
+      property="article:published_time"
+      content="2022-05-20T16:53:39+08:00"
+    />
     <meta
       property="article:modified_time"
-      content="2022-05-20T11:06:47+08:00"
+      content="2022-05-20T16:53:39+08:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Pythons" />
+<meta name="twitter:title" content="Awk" />
+  <meta name="twitter:description" content="这个来解释下
+ss -n |awk &#39;/^tcp/ {&#43;&#43;S[$NF]} END {for (a in S) print a, S[a]}&#39;   /^tcp/ 正则表达式，匹配行首以tcp开始
+  NF 列数
+  $NF 最后一列的值，一般是IP地址
+  S[$NF] 下标为具体IP地址的数组,值是数量
+  &#43;&#43;$[$NF] 会把每个IP出现的次数统计出来
+  for (a in S) 这里a取得是S这个数组的下标，就是IP
+  S[a] 也就是统计的数量
+  " />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "articleSection": "Python",
-      "name": "Pythons",
-      "url" : "https://blog.wujy.vip/python/",
-      "headline": "Pythons",
-      "wordCount" : "0",
+      "articleSection": "Posts",
+      "name": "Awk",
+      "url" : "https://blog.wujy.vip/posts/awk/",
+      "headline": "Awk",
+      "description": "这个来解释下\nss -n |awk \u0027\/^tcp\/ {\u002b\u002bS[$NF]} END {for (a in S) print a, S[a]}\u0027   \/^tcp\/ 正则表达式，匹配行首以tcp开始\n  NF 列数\n  $NF 最后一列的值，一般是IP地址\n  S[$NF] 下标为具体IP地址的数组,值是数量\n  \u002b\u002b$[$NF] 会把每个IP出现的次数统计出来\n  for (a in S) 这里a取得是S这个数组的下标，就是IP\n  S[a] 也就是统计的数量\n  ",
+      "wordCount" : "31",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://blog.wujy.vip/python/"
+          "@id": "https://blog.wujy.vip/posts/awk/"
       },
       "copyrightHolder" : "Jimywu\u0027s Hugo Site",
       "copyrightYear" : "2022",
-      "dateCreated": "2022-05-20T11:06:47.00Z",
-      "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2022-05-20T11:06:47.00Z",
+      "dateCreated": "2022-05-20T16:53:39.00Z",
+      "datePublished": "2022-05-20T16:53:39.00Z",
+      "dateModified": "2022-05-20T16:53:39.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Jimywu's Hugo Site",
@@ -142,7 +174,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://blog.wujy.vip/python/" rel="canonical" type="text/html" />
+  <link href="https://blog.wujy.vip/posts/awk/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -432,7 +464,7 @@
                 <span class="flex">
                   <a
                     href="/posts/awk/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     Awk
                   </a>
@@ -776,59 +808,60 @@
 
         <div class="gdoc-page">
           
-  
+  <article class="gdoc-post">
+    <header class="gdoc-post__header">
+      <h1 class="gdoc-post__title">Awk</h1>
+      <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
+        <span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+  <span class="gdoc-post__tag">
+    <time datetime="2022-05-20T16:53:39&#43;08:00">
+      
+      May 20, 2022
+    </time>
+  </span>
+</span>
 
-
-  
-
-
-
-
-
-
-<div
-  class="gdoc-page__header flex flex-wrap
-  
-    justify-between
-  
-  hidden-mobile
-  "
-  itemprop="breadcrumb"
->
-  
-    <div>
-      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
-      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-        
-        
-        
-        
-  
-  
-    
-    
-    
-    
-  
-  
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Jimywu's Hugo Site</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Pythons</span><meta itemprop='position' content='2' /></li>
-  
-
-  
-
-      </ol>
-    </div>
-  
-  
-</div>
+<span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
+  <span class="gdoc-post__tag">One minute to read</span>
+</span>
 
 
 
-  <article
-    class="gdoc-markdown gdoc-markdown__align--left"
-  >
-    <h1>Pythons</h1>
-    
+
+
+
+      </div>
+    </header>
+    <section class="gdoc-markdown">
+      <p>这个来解释下</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ss -n |awk <span style="color:#e6db74">&#39;/^tcp/ {++S[$NF]} END {for (a in S) print a, S[a]}&#39;</span>
+</span></span></code></pre></div><ul>
+<li>
+<p><code>/^tcp/</code>  正则表达式，匹配<strong>行首</strong>以tcp开始</p>
+</li>
+<li>
+<p><code>NF</code> 列数</p>
+</li>
+<li>
+<p><code>$NF</code> 最后一列的值，一般是IP地址</p>
+</li>
+<li>
+<p><code>S[$NF]</code> 下标为具体IP地址的数组,值是数量</p>
+</li>
+<li>
+<p><code>++$[$NF]</code>  会把每个IP出现的次数统计出来</p>
+</li>
+<li>
+<p><code>for (a in S)</code> 这里a取得是S这个数组的下标，就是IP</p>
+</li>
+<li>
+<p><code>S[a]</code> 也就是统计的数量</p>
+</li>
+</ul>
+
+    </section>
   </article>
 
 

@@ -6,7 +6,24 @@
     <description>Recent content in Posts on Jimywu&#39;s Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-Hans</language>
-    <lastBuildDate>Thu, 19 May 2022 10:33:24 +0800</lastBuildDate><atom:link href="https://blog.wujy.vip/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 May 2022 16:53:39 +0800</lastBuildDate><atom:link href="https://blog.wujy.vip/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Awk</title>
+      <link>https://blog.wujy.vip/posts/awk/</link>
+      <pubDate>Fri, 20 May 2022 16:53:39 +0800</pubDate>
+      
+      <guid>https://blog.wujy.vip/posts/awk/</guid>
+      <description>这个来解释下
+ss -n |awk &amp;#39;/^tcp/ {++S[$NF]} END {for (a in S) print a, S[a]}&amp;#39;   /^tcp/ 正则表达式，匹配行首以tcp开始
+  NF 列数
+  $NF 最后一列的值，一般是IP地址
+  S[$NF] 下标为具体IP地址的数组,值是数量
+  ++$[$NF] 会把每个IP出现的次数统计出来
+  for (a in S) 这里a取得是S这个数组的下标，就是IP
+  S[a] 也就是统计的数量
+  </description>
+    </item>
+    
     <item>
       <title>MarkDown 语法规则参考</title>
       <link>https://blog.wujy.vip/posts/markdown/</link>

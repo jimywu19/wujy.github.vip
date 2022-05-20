@@ -394,6 +394,42 @@
               
                 <span class="flex">
                   <a
+                    href="/posts/awk/"
+                    class="gdoc-nav__entry"
+                  >
+                    Awk
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
                     href="/posts/bigdata/"
                     class="gdoc-nav__entry"
                   >
@@ -703,6 +739,53 @@
 
         <div class="gdoc-page">
           
+  
+    <article class="gdoc-markdown gdoc-post">
+      <header class="gdoc-post__header">
+        <h1 class="gdoc-post__title">
+          <a href="/posts/awk/">Awk</a>
+        </h1>
+      </header>
+      <section>
+        这个来解释下
+ss -n |awk &#39;/^tcp/ {++S[$NF]} END {for (a in S) print a, S[a]}&#39;   /^tcp/ 正则表达式，匹配行首以tcp开始
+  NF 列数
+  $NF 最后一列的值，一般是IP地址
+  S[$NF] 下标为具体IP地址的数组,值是数量
+  ++$[$NF] 会把每个IP出现的次数统计出来
+  for (a in S) 这里a取得是S这个数组的下标，就是IP
+  S[a] 也就是统计的数量
+  
+      </section>
+      <div class="gdoc-post__readmore">
+        
+      </div>
+
+      <footer class="gdoc-post__footer">
+        <div class="flex flex-wrap align-center gdoc-post__meta">
+          <span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+  <span class="gdoc-post__tag">
+    <time datetime="2022-05-20T16:53:39&#43;08:00">
+      
+      May 20, 2022
+    </time>
+  </span>
+</span>
+
+<span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
+  <span class="gdoc-post__tag">One minute to read</span>
+</span>
+
+
+
+
+
+
+        </div>
+      </footer>
+    </article>
   
     <article class="gdoc-markdown gdoc-post">
       <header class="gdoc-post__header">

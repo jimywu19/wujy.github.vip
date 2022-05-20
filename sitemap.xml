@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.wujy.vip/posts/awk/</loc>
+    <lastmod>2022-05-20T16:53:39+08:00</lastmod>
+  </url><url>
     <loc>https://blog.wujy.vip/</loc>
-    <lastmod>2022-05-20T11:11:06+08:00</lastmod>
+    <lastmod>2022-05-20T16:53:39+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.wujy.vip/posts/</loc>
+    <lastmod>2022-05-20T16:53:39+08:00</lastmod>
   </url><url>
     <loc>https://blog.wujy.vip/life/</loc>
     <lastmod>2022-05-20T11:11:06+08:00</lastmod>
@@ -24,9 +30,6 @@
     <lastmod>2022-05-20T11:05:57+08:00</lastmod>
   </url><url>
     <loc>https://blog.wujy.vip/posts/markdown/</loc>
-    <lastmod>2022-05-19T10:33:24+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.wujy.vip/posts/</loc>
     <lastmod>2022-05-19T10:33:24+08:00</lastmod>
   </url><url>
     <loc>https://blog.wujy.vip/posts/kafka/</loc>
