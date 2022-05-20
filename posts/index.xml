@@ -18,47 +18,6 @@
     </item>
     
     <item>
-      <title>Python 速查表中文版</title>
-      <link>https://blog.wujy.vip/posts/python/</link>
-      <pubDate>Thu, 19 May 2022 10:30:33 +0800</pubDate>
-      
-      <guid>https://blog.wujy.vip/posts/python/</guid>
-      <description>===
- 本手册是 Python cheat sheet 的中文翻译版。原作者：Arianne Colton and Sean Chen(data.scientist.info@gmail.com) 编译：ucasFL  目录      常规 数值类类型 数据结构 函数 控制流 面向对象编程 常见字符串操作 异常处理 列表、字典以及元组的推导表达式 单元测试  常规      Python 对大小写敏感 Python 的索引从 0 开始 Python 使用空白符（制表符或空格）来缩进代码，而不是使用花括号  获取帮助      获取主页帮助：help() 获取函数帮助：help(str.replace) 获取模块帮助：help(re)  模块(库)     Python的模块只是一个简单地以 .py 为后缀的文件。
- 列出模块内容：dir(module1) 导入模块：import module 调用模块中的函数：module1.func1()   注：import语句会创建一个新的命名空间(namespace)，并且在该命名空间内执行.</description>
-    </item>
-    
-    <item>
-      <title>Python cheet sheet</title>
-      <link>https://blog.wujy.vip/posts/python_cheat_sheet/</link>
-      <pubDate>Thu, 19 May 2022 10:27:33 +0800</pubDate>
-      
-      <guid>https://blog.wujy.vip/posts/python_cheat_sheet/</guid>
-      <description>Comprehensive Python Cheatsheet     Download text file, Buy PDF, Fork me on GitHub or Check out FAQ. Contents       1. Collections:   List, Dictionary, Set, Tuple, Range, Enumerate, Iterator, Generator.
-  2. Types:   Type, String, Regular_Exp, Format, Numbers, Combinatorics, Datetime.
-  3. Syntax:   Args, Inline, Closure, Decorator, Class, Duck_Type, Enum, Exception.
-  4. System:   Exit, Print, Input, Command_Line_Arguments, Open, Path, OS_Commands.</description>
-    </item>
-    
-    <item>
-      <title>A bit of python</title>
-      <link>https://blog.wujy.vip/posts/a_bit_of_python/</link>
-      <pubDate>Thu, 19 May 2022 10:26:33 +0800</pubDate>
-      
-      <guid>https://blog.wujy.vip/posts/a_bit_of_python/</guid>
-      <description>0. 前言     A Bite of Python，也可叫作“咬一口Python”，寓意着Python的冰山一角，包含着作者这几年学Python时积累的一些知识和经验，文章中包含了许多快速简洁的例子，方便让读者了解到Python中存在的一些概念，然后去自行拓展。
-1. 基础     Python是一门解释型的高级编程语言，由Guido van Rossum于1989年开始编写，并在1991年发布了第一版。Python的特点是代码简洁而且可读性强，使用空格缩进来划分代码块。
-1.0 安装     用浏览器访问官网的下载页面Download Python，选择合适的版本下载安装。
-命令行安装：
-Mac:
-$ brew install python3 Debian&amp;amp;Ubuntu:
-$ sudo apt-get install python3 1.1 解释器     Python的官方解释器是CPython，也就是我们通常讨论的Python的实现，它是用C编写的，负责将编写好的Python代码翻译并执行。
-除此之外，Python还有许多实现版本：
- PyPy，用rPython实现的Python解释器，使用了JIT编译技术，因此执行速度通常比C实现的CPython还要快。 Jython，一个用Java实现的Python解释器。 IronPython，一个用.NET实现的Python解释器。  1.2 语法     1.2.0 缩进     不同于一些语言使用花括号的方式来明确代码块，Python用缩进来表示代码的层级（通常是四个空格，最好不要用tab）
-x = 75 if x &amp;gt;= 60:  if x &amp;gt; 80:  print(&amp;#39;A&amp;#39;)  else:  print(&amp;#39;B&amp;#39;) else:  print(&amp;#39;C&amp;#39;) # 75 1.</description>
-    </item>
-    
-    <item>
       <title>Kafka</title>
       <link>https://blog.wujy.vip/posts/kafka/</link>
       <pubDate>Thu, 19 May 2022 10:00:55 +0800</pubDate>
