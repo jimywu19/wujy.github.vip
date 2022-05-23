@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grafanas on Jimywu&#39;s Hugo Site</title>
+    <link>https://blog.wujy.vip/grafana/</link>
+    <description>Recent content in Grafanas on Jimywu&#39;s Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-Hans</language>
+    <lastBuildDate>Mon, 23 May 2022 15:37:40 +0800</lastBuildDate><atom:link href="https://blog.wujy.vip/grafana/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Loki</title>
+      <link>https://blog.wujy.vip/grafana/loki/</link>
+      <pubDate>Mon, 23 May 2022 15:37:40 +0800</pubDate>
+      
+      <guid>https://blog.wujy.vip/grafana/loki/</guid>
+      <description>loki 原理     loki 和 es 最大的不同是 loki 只对标签进行索引而不对内容索引
+loki处理日志的模式和prometheus一致，具体如下：
+prometheus：
+ 相同标签对应的是一个流 prometheus 处理 series 的模式。 prometheus 中标签一致对应的同一个 hash 值和 refid(正整数递增的 id)，也就是同一个 series时序数据不断的 append 追加到这个 memseries 中。 当有任意标签发生变化时会产生新的 hash 值和 refid，对应新的 series  loki
+ loki 一组标签值会生成一个 stream 日志随着时间的递增会追加到这个 stream 中，最后压缩为 chunk 当有任意标签发生变化时会产生新的 hash 值，对应新的stream  动态标签：说白了就是标签的 value 不固定
+高基数标签：说白了就是标签的 value 可能性太多了，达到 10 万，100 万甚至更多</description>
+    </item>
+    
+    <item>
+      <title>ExploreGrama</title>
+      <link>https://blog.wujy.vip/grafana/exploregrama/</link>
+      <pubDate>Mon, 23 May 2022 14:34:26 +0800</pubDate>
+      
+      <guid>https://blog.wujy.vip/grafana/exploregrama/</guid>
+      <description>一、loki数据源 Explore your logs     从loglabels选择器中选择一个log流，可以在查询区域写这样的stream selector
+普通查询 {job=&amp;quot;default/promethues&amp;quot;}
+组合查询 {app=&amp;quot;cassandra&amp;quot;,namespace=&amp;quot;prod&amp;quot;}
+过滤查询 {app=&amp;quot;cassandra&amp;quot;} |~ &amp;quot;(duration|latency)s*(=|is|of)s*[d.]+&amp;quot;
+{app=&amp;quot;cassandra&amp;quot;} |= &amp;quot;exact match&amp;quot;
+{app=&amp;quot;cassandra&amp;quot;} != &amp;quot;do not match&amp;quot;
+{filename=&amp;quot;/var/log/tns-app.log&amp;quot;} #普通查询
+{filename=&amp;quot;/var/log/tns-app.log&amp;quot;} |= &amp;quot;error&amp;quot; #使用过滤器表达式查询
+{job=&amp;quot;varlogs&amp;quot;} #普通查询
+{job=~”apache|syslog”} #多job匹配查询
+Grafana displays all logs within the log file of the sample application. The height of each bar encodes the number of logs that were generated at that time. Grafana 会显示示例应用的所有logs，柱状条的高度代表我们在某个时间产生的日志数量。
+二、promethues数据源 Explore your metrics（ ad-hoc queries)     tns_request_duration_seconds_count press Shift + Enter</description>
+    </item>
+    
+  </channel>
+</rss>

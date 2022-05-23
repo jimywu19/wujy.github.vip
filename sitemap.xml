@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.wujy.vip/posts/awk/</loc>
-    <lastmod>2022-05-20T16:53:39+08:00</lastmod>
+    <loc>https://blog.wujy.vip/grafana/</loc>
+    <lastmod>2022-05-23T15:37:40+08:00</lastmod>
   </url><url>
     <loc>https://blog.wujy.vip/</loc>
+    <lastmod>2022-05-23T15:37:40+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.wujy.vip/grafana/loki/</loc>
+    <lastmod>2022-05-23T15:37:40+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.wujy.vip/grafana/exploregrama/</loc>
+    <lastmod>2022-05-23T14:34:26+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.wujy.vip/posts/awk/</loc>
     <lastmod>2022-05-20T16:53:39+08:00</lastmod>
   </url><url>
     <loc>https://blog.wujy.vip/posts/</loc>
