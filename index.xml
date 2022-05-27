@@ -6,7 +6,24 @@
     <description>Recent content on Jimywu&#39;s Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-Hans</language>
-    <lastBuildDate>Mon, 23 May 2022 15:37:40 +0800</lastBuildDate><atom:link href="https://blog.wujy.vip/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 May 2022 16:19:58 +0800</lastBuildDate><atom:link href="https://blog.wujy.vip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>装饰器</title>
+      <link>https://blog.wujy.vip/python/%E8%A3%85%E9%A5%B0%E5%99%A8/</link>
+      <pubDate>Tue, 24 May 2022 16:19:58 +0800</pubDate>
+      
+      <guid>https://blog.wujy.vip/python/%E8%A3%85%E9%A5%B0%E5%99%A8/</guid>
+      <description>1、什么是装饰器     器指的是工具，可以定义成函数
+装饰指的是为其他事物添加额外的东西点缀
+合到一起的解释： 装饰器指的定义一个函数，该函数是用来为其他函数添加额外的功能 就是拓展原来函数功能的一种函数
+2、为何要用装饰器     开放封闭原则
+开放：指的是对拓展功能是开放的
+封闭：指的是对修改源代码是封闭的
+装饰器就是在不修改被装饰器对象源代码以及调用方式的前提下为被装饰对象添加新功能
+3、例子     需求 ：写个认证功能（输入账号密码，进行认证），当然账号密码是要从文件中取出
+def auth(func):  def wrapper(*args, **kwargs):  # 1、调用原函数  # 2、为其增加新功能  name = input(&amp;#39;your name&amp;gt;&amp;gt;: &amp;#39;).strip()  pwd = input(&amp;#39;your password&amp;gt;&amp;gt;: &amp;#39;).strip()  if name == &amp;#39;egon&amp;#39; and pwd == &amp;#39;123&amp;#39;:  res = func(*args, **kwargs)  return res  else:  print(&amp;#39;账号密码错误&amp;#39;)   return wrapper  @auth def index():  print(&amp;#39;from index&amp;#39;) </description>
+    </item>
+    
     <item>
       <title>Loki</title>
       <link>https://blog.wujy.vip/grafana/loki/</link>
@@ -142,11 +159,15 @@ bin/kafka-console-producer.sh --broker-list hadoop101:9092 --topic first 消费�
       <guid>https://blog.wujy.vip/posts/istio/</guid>
       <description>1、其他      HPA VPA  2、Consul     3、Eureka     4、Zipkin     5、微服务架构      dubbo springCloud  6、Knative     serviceless
 7、Istio     与Kubernetes紧密结合的适用于云原生场景的Service Mesh形态的用于服务治理的开发平台。
-服务治理：连接、安全、策略执行、可观测性
+服务治理：
+1、连接 智能控制服务之间的调用流量，能够实现灰度升级、AB 测试和红黑部署等功能
+2、安全 自动为服务之间的调用提供认证、授权和加密
+3、策略执行 应用用户定义的 policy，保证资源在消费者中公平分配
+4、可观测性 查看服务运行期间的各种数据，比如日志、监控和 tracing，了解服务的运行情况
  UDPA(Universal Data Plane API)
 数据平面标准&amp;mdash;-实例间网络流量 SMI(Service Mesh Interface)
-制平面标准&amp;mdash;-负责生成和部署控制数据平面行为的相关配置  7.1、Pilot     配置数据 VirtualService DestinationRule Gateway ServiceEntry
- gRPC xDS  7.</description>
+制平面标准&amp;mdash;-负责生成和部署控制数据平面行为的相关配置
+  7.</description>
     </item>
     
     <item>

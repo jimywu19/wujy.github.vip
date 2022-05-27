@@ -58,11 +58,15 @@ bin/kafka-console-producer.sh --broker-list hadoop101:9092 --topic first 消费�
       <guid>https://blog.wujy.vip/posts/istio/</guid>
       <description>1、其他      HPA VPA  2、Consul     3、Eureka     4、Zipkin     5、微服务架构      dubbo springCloud  6、Knative     serviceless
 7、Istio     与Kubernetes紧密结合的适用于云原生场景的Service Mesh形态的用于服务治理的开发平台。
-服务治理：连接、安全、策略执行、可观测性
+服务治理：
+1、连接 智能控制服务之间的调用流量，能够实现灰度升级、AB 测试和红黑部署等功能
+2、安全 自动为服务之间的调用提供认证、授权和加密
+3、策略执行 应用用户定义的 policy，保证资源在消费者中公平分配
+4、可观测性 查看服务运行期间的各种数据，比如日志、监控和 tracing，了解服务的运行情况
  UDPA(Universal Data Plane API)
 数据平面标准&amp;mdash;-实例间网络流量 SMI(Service Mesh Interface)
-制平面标准&amp;mdash;-负责生成和部署控制数据平面行为的相关配置  7.1、Pilot     配置数据 VirtualService DestinationRule Gateway ServiceEntry
- gRPC xDS  7.</description>
+制平面标准&amp;mdash;-负责生成和部署控制数据平面行为的相关配置
+  7.</description>
     </item>
     
     <item>
