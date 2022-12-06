@@ -65,7 +65,7 @@ bin/kafka-console-producer.sh --broker-list hadoop101:9092 --topic first 消费�
 4、可观测性 查看服务运行期间的各种数据，比如日志、监控和 tracing，了解服务的运行情况
  UDPA(Universal Data Plane API)
 数据平面标准&amp;mdash;-实例间网络流量 SMI(Service Mesh Interface)
-制平面标准&amp;mdash;-负责生成和部署控制数据平面行为的相关配置
+控制平面标准&amp;mdash;-负责生成和部署控制数据平面行为的相关配置
   7.</description>
     </item>
     
